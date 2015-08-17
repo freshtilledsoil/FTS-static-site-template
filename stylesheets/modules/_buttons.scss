@@ -1,0 +1,50 @@
+.btn,
+.btn-secondary,
+.btn-cancel {
+  padding: 10px 25px;
+  @include inline-block();
+  border: 0;
+  border-radius: 0;
+  
+  [disabled],
+  [disabled]:hover {
+    background: #f0f0f0;
+  }
+}
+
+.btn{
+  background: $color-action;
+  color: $color-white;
+  @include transition(all linear .15s);
+  
+  &:hover, &:focus {
+    background: darken($color-action, 10);
+    color: $color-white;
+    @include transform(scale(1.05));
+    
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid $color-action;
+  color: $color-action;
+  
+  &:hover,
+  &:focus {
+    background: none;
+    border: 1px solid $color-action;
+    @include transform(scale(1.05));
+  }
+}
+
+.btn-cancel {
+  background: #f7f7f7;
+  color: #7f7f7f;
+
+  &:hover,
+  &:focus {
+    background: #eaeaea;
+    color: #7f7f7f;
+  }
+}

@@ -1,0 +1,31 @@
+.pagination {
+  text-align: center;
+  @include font-size(14);
+  
+  @media screen and (min-width: $bp-medium) {
+    @include font-size(16);
+    padding: 30px 0;
+  }
+  
+  .page-numbers {
+    margin: 0 5px;
+    
+    &.prev {
+      margin: 0 10px 0 0;
+    } // .prev
+    
+    &.next {
+      margin: 0 0 0 10px;
+    } // .next
+    
+    &.current {
+      font-weight: 700;
+    } // .current
+    
+    &.dots {
+      margin: 0;
+    }
+    
+  } // .page-numbers
+  
+} // .pagination

@@ -1,0 +1,74 @@
+.gutter {
+  margin: 0 0 15px 25px;
+}
+
+.layout {
+  @include clearfix;
+  margin-left: -25px;
+}
+
+.col {
+  //float: left;
+  @include inline-block(top);
+  margin-left: -4px;
+
+  &-last {
+    float: right;
+    margin-left: -4px;
+  }
+
+}
+
+// widths
+
+.sm-w-100 {
+  width: 100%;
+}
+
+@media screen and ( min-width: $bp-medium ) {
+  
+  .mid-w-100 {
+    width: 100%;
+  }
+  
+  .mid-w-66 {
+    width: 66.666666%;
+  }
+  
+  .mid-w-33 {
+    width: 33.333333%;
+  }
+  
+  .mid-w-50 {
+    width: 50%;
+  }
+  
+  .mid-w-25 {
+    width: 25%;
+  }
+  
+}
+
+@media screen and ( min-width: $bp-large ) {
+  
+  .lrg-w-100 {
+    width: 100%;
+  }
+  
+  .lrg-w-66 {
+    width: 66.666666%;
+  }
+  
+  .lrg-w-33 {
+    width: 33.333333%;
+  }
+  
+  .lrg-w-50 {
+    width: 50%;
+  }
+  
+  .lrg-w-25 {
+    width: 25%;
+  }
+  
+}

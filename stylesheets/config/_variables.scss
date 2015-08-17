@@ -1,0 +1,21 @@
+//  ----------------------------------------
+//  Typography Library
+//  ----------------------------------------
+
+$base-font-size:                16px;
+$base-font-family:              'Open Sans', sans-serif;
+$base-line-height:              1.3;
+
+$font-primary: $base-font-family;
+$font-secondary: 'Merriweather', serif;
+
+$bp-wide: 68.750em; // 1100px
+$bp-large: 59.375em; // 950px
+$bp-medium: 46.875em; // 750px
+$bp-small: 31.250em; // 500px
+
+$color-white: #fff;
+$color-black: #000;
+$color-border: #ddd;
+$color-accent: #eee;
+$color-action: #3c6fb4;

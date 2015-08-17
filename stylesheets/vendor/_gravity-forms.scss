@@ -1,0 +1,63 @@
+.gform_wrapper {
+  padding: 15px 0;
+}
+
+.gform_fields {
+  @include is-clean;
+  list-style: none;
+  
+  label {
+    color: $color-black;
+  }
+  
+}
+
+.gfield {
+  margin: 0;
+}
+
+.ginput_complex {
+  overflow: hidden;
+  
+  > span {
+    @media screen and (min-width: $bp-small) {
+      width: 49%;
+      display: block;
+      float: left;
+    }
+
+    label {
+      @include font-size(14);
+      opacity: .6;
+    }
+      
+    + span {
+      margin-left: 2%;
+    }
+    
+    > input[type] {
+      margin: 0;
+    }
+    
+  }
+  
+}
+
+.gfield_description {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  @include font-size(14);
+  opacity: .6;
+}
+
+.gform_button[type] {
+  @extend .btn;
+  border-radius: 0;
+  border: 0;
+  
+  &:hover {
+    @include box-shadow(none);
+    border: 0;
+  }
+  
+}

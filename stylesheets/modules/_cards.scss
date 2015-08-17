@@ -1,0 +1,33 @@
+.card {
+  text-align: left;
+}
+
+.card-heading {
+  margin: 0 0 5px;
+}
+
+.card-media {
+  margin-bottom: 20px;
+  
+  img {
+    width: 100%;
+    @include transition(all ease-in .15s);
+  }
+  
+  a {
+    display: block;
+    overflow: hidden;
+    &:hover {
+      
+      img {
+        @include transform(scale(1.05));
+      }
+    }
+  } // a
+  
+}
+
+
+.card-content {
+  
+}

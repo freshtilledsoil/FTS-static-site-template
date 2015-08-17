@@ -1,0 +1,52 @@
+.page-content {
+  padding: 30px 15px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.wp-caption {
+  
+  img {
+    display: block;
+  }
+  
+}
+
+.wp-caption-text {
+  margin: 0;
+  @include font-size(12);
+  
+}
+
+.alignright,
+.aligncenter,
+.alignleft {
+  margin-bottom: 10px;
+}
+
+.alignright {
+  float: right;
+  margin-left: 20px;
+}
+
+.aligncenter {
+  text-align: center;
+  margin-left: auto;
+  width: auto;
+  display: block;
+  margin-right: auto;
+  margin-top: 10px;
+  
+  img {
+    @include inline-block;
+  }
+  
+}
+
+.alignleft {
+  
+  @media screen and (min-width: $bp-small) {
+    float: left;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,52 @@
+.search-form {
+
+}
+
+
+
+.screen-reader-text {
+  @include move-off-screen;
+}
+
+input[type="submit"].search-submit {
+  @extend .btn;
+}
+
+// results
+
+.listing {
+  padding: 30px 0;
+}
+
+.list-output {
+  @include is-clean;
+  list-style: none;
+}
+
+.list-item {
+  margin: 0;
+  
+  + .list-item {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  
+}
+
+.list-heading {
+  @include font-size(16);
+  font-weight: 700;
+}
+
+.list-excerpt {
+  @include font-size(14);
+  margin: 0;
+}
+
+.list-meta {
+  margin: 0;
+  @include font-size(12);
+  opacity: .8;
+  margin-bottom: .5em;
+  margin-top: -.5em;
+}

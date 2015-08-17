@@ -1,0 +1,29 @@
+.content-block {
+  padding: 50px 15px;
+  text-align: center;
+  
+  + .content-block {
+    border-top: 1px solid $color-border;
+  }
+  
+}
+
+.content-block-heading {
+  margin: 0 0 50px;
+}
+
+.content-block-description {
+  max-width: 800px;
+  padding: 0 15px;
+  margin: -40px auto 50px;
+  
+  p {
+    @include font-size(18);
+  }
+  
+}
+
+.content-block-footer {
+  @include clearfix;
+  padding: 15px;
+}
