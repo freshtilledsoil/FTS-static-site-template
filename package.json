@@ -2,16 +2,13 @@
   "name": "fts-site",
   "version": "0.1.0",
   "author": "Fresh Tilled Soil",
-  "description": "Fresh Tilled SOil default site configuratiobn",
+  "description": "Fresh Tilled Soil default site config",
   "repository": {
     "type": "git",
     "url": "git@github.com:freshtilledsoil/FTS-static-site-template.git"
   },
-  "devDependencies": {
-    "fts-grunt": "*",
-  },
   "dependencies": {
-    "load-grunt-tasks": "~2.0.0"
+    "fts-grunt": "*"
   },
   "license": "MIT"
 }
