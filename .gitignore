@@ -4,6 +4,9 @@
 
 # NPM
 node_modules/
+Gruntfile.js
+tasks/
+tasks/*
 
 # Jekyll
 _site/
