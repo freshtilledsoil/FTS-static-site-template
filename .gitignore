@@ -7,6 +7,7 @@ node_modules/
 Gruntfile.js
 tasks/
 tasks/*
+package.json
 
 # Jekyll
 _site/

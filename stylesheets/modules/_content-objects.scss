@@ -2,21 +2,36 @@
   padding: 30px 15px;
   max-width: 700px;
   margin: auto;
+  
+  &.layout-columns-2 {
+    padding: 30px 15px;
+    
+     @media screen and (min-width: $bp-medium) {
+       width: 66.666666%;
+      float: left;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+  }
+  
 }
 
 .post-content,
 .post-sidebar {
   padding: 30px 15px;
+  
   @media screen and (min-width: $bp-medium) {
     float: left;
     padding-left: 0;
     padding-right: 0;
   }
+
 }
 
 .post-content {
   @media screen and (min-width: $bp-medium) {
-    width: 66.666666%
+    width: 66.666666%;
   }
 }
 

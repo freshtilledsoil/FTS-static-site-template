@@ -950,6 +950,18 @@ input[type=range]:focus::-ms-fill-upper {
   list-style: none;
 }
 
+.clearfix {
+  *zoom: 1;
+  clear: both;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 /********************************************************************
 *
 *   Layout
@@ -1629,6 +1641,17 @@ input[type=range]:focus::-ms-fill-upper {
   max-width: 700px;
   margin: auto;
 }
+.page-content.layout-columns-2 {
+  padding: 30px 15px;
+}
+@media screen and (min-width: 46.875em) {
+  .page-content.layout-columns-2 {
+    width: 66.666666%;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .post-content,
 .post-sidebar {
@@ -1645,7 +1668,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 @media screen and (min-width: 46.875em) {
   .post-content {
-    width: 66.66667%;
+    width: 66.666666%;
   }
 }
 
@@ -1936,7 +1959,12 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .widget {
-  padding: 0 10px 40px 30px;
+  padding: 0 0 40px 0;
+}
+@media screen and (min-width: 46.875em) {
+  .widget {
+    padding: 0 10px 40px 30px;
+  }
 }
 .widget > ul {
   padding: 0;
@@ -1960,6 +1988,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .widget_pages .page_item {
   display: block;
+  padding: 3px 0;
+  border: 0;
 }
 .widget_pages .page_item:hover a {
   background: none;
