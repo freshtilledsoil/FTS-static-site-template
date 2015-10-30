@@ -452,7 +452,6 @@ textarea {
   padding: .75em;
   text-transform: none;
   width: 100%;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 1em; }
   input[type="color"]:focus,
@@ -537,7 +536,8 @@ input[type="submit"] {
   letter-spacing: .03em;
   line-height: normal;
   overflow: visible;
-  transition: border-color .2s, background-color .075s;
+  -webkit-transition: border-color .2s, background-color .075s;
+          transition: border-color .2s, background-color .075s;
   text-transform: uppercase;
   margin-bottom: 1em; }
   button:hover, button:focus,
@@ -556,7 +556,9 @@ input[type="submit"] {
   input[type="submit"]:active {
     background: #73ace6;
     color: #fff;
-    transform: translate(0, 1px); }
+    -webkit-transform: translate(0, 1px);
+        -ms-transform: translate(0, 1px);
+            transform: translate(0, 1px); }
 
 [disabled][role="button"], button[disabled],
 input[disabled][type="button"],
@@ -577,7 +579,9 @@ input[disabled][type="submit"]:hover {
 input[disabled][type="button"]:active,
 input[disabled][type="reset"]:active,
 input[disabled][type="submit"]:active {
-  transform: none; }
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -808,5 +812,3 @@ input[type=range]:focus::-ms-fill-upper {
 *   Vendor
 *
 ********************************************************************/
-
-/*# sourceMappingURL=manisfest.css.map */

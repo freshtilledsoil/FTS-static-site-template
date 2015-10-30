@@ -340,6 +340,12 @@ table {
   font-size: inherit;
   width: 100%; }
 
+caption {
+  font-weight: 400;
+  @include font-size(20);
+  margin-bottom: 10px;
+}
+
 thead {
   background: #f7f7f7; }
   thead th {
@@ -374,7 +380,6 @@ td {
   font-size: 0.75em; }
 
 caption {
-  font-weight: bold;
   caption-side: top;
   text-align: left; }
 

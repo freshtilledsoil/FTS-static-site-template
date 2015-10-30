@@ -1,0 +1,57 @@
+.widget {
+  padding: 0 10px 40px 30px;
+  
+  > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include font-size(14);
+    
+    li {
+      margin-left: 0;
+    }
+    
+  }
+  
+  &-title {
+    @include font-size(20);
+  }
+  
+  &_pages {
+    //margin-bottom: 20px;
+    
+    .children {
+      position: static;
+      border: 0;
+      margin-left: 20px;
+      padding: 0;
+    }
+    
+    .page_item {
+      display: block;
+      
+      &:hover {
+        
+        a {
+          background: none;
+          color: $color-action;
+          @include box-shadow(none);
+        }
+        
+      }
+      
+      > a {
+        padding: 0;
+        
+        
+        &:hover, &:focus {
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+      
+    }
+    
+  }
+  
+}

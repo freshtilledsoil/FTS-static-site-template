@@ -4,6 +4,28 @@
   margin: auto;
 }
 
+.post-content,
+.post-sidebar {
+  padding: 30px 15px;
+  @media screen and (min-width: $bp-medium) {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.post-content {
+  @media screen and (min-width: $bp-medium) {
+    width: 66.666666%
+  }
+}
+
+.post-sidebar {
+  @media screen and (min-width: $bp-medium) {
+    width: 33.333333%;
+  }
+}
+
 .wp-caption {
   
   img {

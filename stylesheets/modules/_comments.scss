@@ -7,4 +7,77 @@
     margin: 0;
   }
   
+  &-title {
+    margin-bottom: 30px;
+    
+  }
+  
 }
+
+.comment {
+   margin-left: 0;
+  
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-body {
+    
+  }
+  
+  &-meta {
+    a {
+      border: 0;
+    }
+  }
+  
+  &-author {
+    @include font-size(16);
+    line-height: 1.2em;
+    
+    .avatar {
+      float: left;
+      margin: 0 10px 5px 0;
+      height: 34px;
+      width: 34px;
+    }
+    
+  }
+  
+  &-metadata {
+    
+    @include font-size(14);
+  }
+  
+  &-content {
+    padding: 15px 0 10px;;
+    @include font-size(14);
+  }
+  
+  .reply {
+    padding-bottom: 20px;
+    
+    a {
+      @extend .btn;
+    }
+  }
+  
+  &-respond {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    .form-submit {
+      .submit {
+        font-weight: 400;
+        font-family: inherit;
+        @extend .btn;
+      }
+    }
+    
+  }
+  
+
+  
+} // .comment

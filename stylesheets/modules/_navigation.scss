@@ -134,9 +134,15 @@
   @include is-clean;
   list-style: none;
   line-height: 26px;
+  
+  > ul {
+    margin: 0;
+  }
+  
 }
 
-.menu-item {
+.menu-item,
+.page_item {
   margin: 0;
   border-top: 1px solid $color-border;
   overflow: hidden;
@@ -167,7 +173,7 @@
   &:hover,
   &:focus,
   &.child-has-focus {
-    a {
+    > a {
       font-weight: 700;
       
       @media screen and (min-width: $bp-medium) {
@@ -179,7 +185,8 @@
       
     }
     
-    .sub-menu{
+    .sub-menu,
+    .children {
       top: 100%;
       left: auto;
       right: 0;
@@ -230,11 +237,16 @@
   
 } // .ui-toggle-button
 
-.sub-menu {
+.sub-menu,
+.children {
   @include is-clean;
   margin: 10px 0 0 0;
   list-style: none;
   clear: both;
+  
+  .footer & {
+    display: none;
+  }
   
    @media screen and (min-width: $bp-medium) {
      @include move-off-screen();
@@ -246,7 +258,8 @@
      border: 1px solid $color-border;
    }
   
-  > .menu-item {
+  > .menu-item,
+    .page_item {
     border: 0;
     padding: 0;
     display: block;
