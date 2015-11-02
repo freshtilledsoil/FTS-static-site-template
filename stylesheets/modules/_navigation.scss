@@ -137,6 +137,26 @@
   
   > ul {
     margin: 0;
+    padding: 0;
+    
+    .children {
+      margin: 0;
+      padding: 0 0 0 20px;
+      
+      a {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      @media screen and (min-width: $bp-medium) {
+        .children > li {
+          padding-left: 10px;
+        }
+      }
+      
+      
+    }
+    
   }
   
 }
