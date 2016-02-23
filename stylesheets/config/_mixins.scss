@@ -34,6 +34,14 @@
   overflow: hidden;
 }
 
+// breakpoints helper
+
+@mixin breakpoint( $point ) {
+  @media ( min-width: $point ) {
+    @content;
+  }
+}
+
 // Fix inline-block cross browser
 
 @mixin inline-block( $vertical-align: baseline ) {
