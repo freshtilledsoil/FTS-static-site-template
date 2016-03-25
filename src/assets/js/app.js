@@ -11,7 +11,7 @@
 
   // Start defining methods here
   App.init = function() {
-    $('.slider').slick();
+
   };
   
   // Start the application

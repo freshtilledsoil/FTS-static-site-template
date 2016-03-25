@@ -1,6 +1,11 @@
+# dist
+dist/
+dist/*
+
 # Sass
 .sass-cache/
 .sass-cache/*
+*.map
 
 # NPM
 node_modules/
@@ -24,9 +29,13 @@ Session.vim
 
 # Mac OSX
 .DS_Store
+.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
 
 # Windows
 Thumbs.db 
