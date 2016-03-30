@@ -19,9 +19,8 @@
   </footer><!--/.footer-->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="javascripts/nav.js"></script>
-  <script src="javascripts/vendors/slick.js"></script>
-  <script src="javascripts/app.js"></script>
+  <script src="assets/js/vendor.concat.js"></script>
+  <script src="assets/js/app.js"></script>
 
 </body>
 </html>
