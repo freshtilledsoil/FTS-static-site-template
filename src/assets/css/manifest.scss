@@ -2,12 +2,6 @@
 *
 *   Base Style Framework:
 *     github.com/freshtilledsoil/base-style-framework
-*     Version 1.0.1
-*     Last Updated: 03.18.2015
-*
-*     Beyond Normalization, a base set of markup styling and
-*     patterns to provide an easily configurable head-start
-*     to any web project.
 *
 *   License:
 *     The MIT License (MIT)
@@ -15,9 +9,33 @@
 ********************************************************************/
 
 @import
-        'stylesheets/config/__import',
-        'stylesheets/base/__import',
-        'stylesheets/layout/__import',
-        'stylesheets/modules/__import',
-        'stylesheets/vendor/__import';
- 
+  'stylesheets/config/__import',
+  'stylesheets/base/__import',
+  'stylesheets/layout/__import',
+  'stylesheets/modules/__import',
+  'stylesheets/vendor/__import',
+
+  //acceCSS accessibility testing
+  'stylesheets/config/tests/accecss';
+
+
+//
+// Accessibility testing
+//
+@include accecss(
+  'html body', // selectors to check
+  false, // css zones
+  false, // greyscale mode
+  false  // colorblind filter
+);
+
+/// ** Available filters :
+          // `protanopia`,
+          // `protanomaly`,
+          // `deuteranopia`,
+          // `deuteranomaly`,
+          // `tritanopia`,
+          // `tritanomaly`,
+          // `achromatopsia`,
+          // `achromatomal
+
