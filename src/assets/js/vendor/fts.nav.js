@@ -191,6 +191,10 @@
 
     $(w).on('resize', function() {
 
+      var targetTrigger = $('.nav-menu-toggle');
+      var targetId = targetTrigger.attr('aria-controls');
+      var targetZone = $('#' + targetId);
+
       if( Nav.isScreenSize( 'mediumscreen' ) || Nav.isScreenSize( 'smallscreen' ) ) {
 
         var parentMenu;
@@ -205,6 +209,10 @@
 
         }); // each menu with children
 
+        if ( targetZone.hasClass('was-expanded') ) {
+          targetZone.removeClass('was-expanded').attr('aria-expanded', 'true');
+        }
+
       } else {
 
         $('.menu-item.has-children').each(function() {
@@ -215,6 +223,16 @@
           Nav.destroySmallView( parentMenu, subMenu );
 
         }); // each menu with children
+
+      }
+
+      if ( targetZone.attr('aria-expanded') && Nav.isScreenSize( 'largescreen' ) ) {
+
+        if ( targetZone.attr('aria-expanded') === 'true' ) {
+          targetZone.addClass('was-expanded');
+        }
+
+        targetZone.removeAttr('aria-expanded');
 
       }
 
