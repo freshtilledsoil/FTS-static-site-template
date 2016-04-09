@@ -209,8 +209,8 @@
 
         }); // each menu with children
 
-        if ( targetZone.hasClass('was-expanded') ) {
-          targetZone.removeClass('was-expanded').attr('aria-expanded', 'true');
+        if ( $('body').hasClass('nav-is-active') ) {
+          targetZone.attr('aria-expanded', 'true');
         }
 
       } else {
@@ -227,10 +227,6 @@
       }
 
       if ( targetZone.attr('aria-expanded') && Nav.isScreenSize( 'largescreen' ) ) {
-
-        if ( targetZone.attr('aria-expanded') === 'true' ) {
-          targetZone.addClass('was-expanded');
-        }
 
         targetZone.removeAttr('aria-expanded');
 
